@@ -1,7 +1,7 @@
 body{
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
-  background-color: rgb(51, 146, 207);
+  background-color: #fff;
 }
 
 .header{
@@ -10,7 +10,8 @@ body{
 }
 
 #userInput{
-  width: 350px;
+  margin-top: 20px;
+  width: 50%;
   height: 35px;
   display: inline-block;
 }
@@ -36,4 +37,20 @@ body{
 
 #list{
   color: white;
+}
+
+@media (max-width: 500px) {
+  .bod{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .tasks{
+    margin-left: 0;
+    text-align: center;
+    margin-top: 5px;
+  }
+  #userInput{
+    width: 90%;
+    margin-left: 0;
+  }
 }
