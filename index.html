@@ -17,7 +17,25 @@
   <body>
     <div class="container-fluid text-center">
       <div class="header">
-        <h1>Today's Task List</h1>
+        <script>
+          var today = new Date();
+          var dd = today.getDate();
+          var mm = today.getMonth()+1; //January is 0!
+          var yyyy = today.getFullYear();
+
+          if(dd<10) {
+              dd = '0'+dd
+          } 
+
+          if(mm<10) {
+              mm = '0'+mm
+          } 
+
+          today = mm + '/' + dd + '/' + yyyy;
+          document.getElementById("today").innerHTML;
+        </script>  
+          
+        <h1>Today is <p id="today"></p> What are you going to Accomplish?</h1>
       </div>
 
       <div class="bod">
